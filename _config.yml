@@ -1,0 +1,10 @@
+title: DLC Benchmarks
+description: A database of inference speed benchmark results on various platforms and architectures
+theme: minima
+
+github_username: deeplabcut
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - "**README.md"

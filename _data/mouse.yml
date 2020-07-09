@@ -1,0 +1,12 @@
+name: Mouse Video
+image_sizes: ["115 x 87", "229 x 174", "459 x 349", "649 x 493", "917 x 698"]
+benchmarks:
+  - os: Linux
+    processor: Intel Xeon CPU
+    model: MobileNetV2-0.35
+    results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
+
+  - os: Linux
+    processor: Intel Xeon CPU
+    model: Resnet-50
+    results: [[28,1], [11,0], [4,0], [2,0], [1,0]]

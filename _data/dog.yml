@@ -1,0 +1,22 @@
+name: Dog Video
+image_sizes: ["75 x 33", "150 x 267", "300 x 533", "424 x 754", "600 x 1067"]
+benchmarks:
+  - os: Linux
+    processor: Intel Xeon CPU
+    model: MobileNetV2-0.35
+    results: [[62,5], [31,1], [14,0], [8,0], [4,0]]
+    
+  - os: Linux
+    processor: Intel Xeon CPU
+    model: Resnet-50
+    results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
+
+  - os: Windows
+    processor: Intel Xeon CPU
+    model: MobileNetV2-0.35
+    results: [[62,5], [31,1], [14,0], [8,0], [4,0]]
+    
+  - os: Windows
+    processor: Intel Xeon CPU
+    model: Resnet-50
+    results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
