@@ -92,4 +92,94 @@ benchmarks:
     processor: Quadro P400
     model: ResNet-50
     results: [[25,0], [16,0], [7,0], [4,0], [2,0]]
-  
+   
+  - os: Windows
+    processor: Intel Xeon Silver CPU (2.1 GHz)
+    model: MobileNetV2-0.35
+    results: [[28,1], [14,0], [6,0], [3,0], [1,0]]
+    
+  - os: Windows
+    processor: Intel Xeon Silver CPU (2.1 GHz)
+    model: ResNet-50
+    results: [[23,1], [9,0], [3,0], [2,0], [1,0]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080 with Max-Q Design
+    model: MobileNetV2-0.35
+    results: [[147,17], [136,15], [108,6], [73,3], [46,1]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080 with Max-Q Design
+    model: ResNet-50
+    results: [[107,5], [93,4], [54,2], [32,1], [18,0]]
+
+   - os: Windows
+    processor: GeForce GTX 1080
+    model: MobileNetV2-0.35
+    results: [[133,15], [119,14], [100,9], [77,3], [43,1]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080
+    model: ResNet-50
+    results: [[110,5], [94,3], [55,1], [34,1], [19,0]]
+    
+  - os: Windows
+    processor: Quadro P1000
+    model: MobileNetV2-0.35
+    results: [[129,13], [115,11], [72,3], [43,1], [22,0]]
+    
+  - os: Windows
+    processor: Quadro P1000
+    model: ResNet-50
+    results: [[57,2], [41,1], [19,0], [10,0], [6,0]]
+    
+ - os: MacOS
+    processor: Intel Core i5 CPU (2.4 GHz)
+    model: MobileNetV2-0.35
+    results: [[42,5], [22,2], [12,1], [7,1], [4,0]]
+    
+  - os: MacOS
+    processor: Intel Core i5 CPU (2.4 GHz)
+    model: ResNet-50
+    results: [[9,1], [4,0], [2,0], [1,0], [0,0]]
+
+  - os: MacOS
+    processor: Intel Core i7 CPU (3.5 GHz)
+    model: MobileNetV2-0.35
+    results: [[127,10], [48,3], [16,1], [9,1], [4,0]]
+    
+  - os: MacOS
+    processor: Intel Core i7 CPU (3.5 GHz)
+    model: ResNet-50
+    results: [[30,3], [10,2], [3,0], [2,0], [1,0]]
+    
+  - os: MacOS
+    processor: Intel Core i9 CPU (2.4 GHz)
+    model: MobileNetV2-0.35
+    results: [[178,15], [74,16], [19,3], [10,1], [6,0]]
+    
+  - os: MacOS
+    processor: Intel Core i9 CPU (2.4 GHz)
+    model: ResNet-50
+    results: [[35,8], [14,2], [6,1], [4,0], [2,0]]
+
+  - os: Jetson
+    processor: Xavier
+    model: MobileNetV2-0.35
+    results: [[79,9], [68,9], [59,5], [44,2], [27,1]]
+    
+  - os: Jetson
+    processor: Xavier
+    model: ResNet-50
+    results: [[46,2], [36,1], [19,0], [12,0], [7,0]]
+    
+  - os: Jetson
+    processor: TX2
+    model: MobileNetV2-0.35
+    results: [[39,2], [30,2], [18,1], [9,0], [5,0]]
+    
+  - os: Jetson
+    processor: TX2
+    model: ResNet-50
+    results: [[19,1], [11,0], [6,0], [4,0], [2,0]] 
+   
