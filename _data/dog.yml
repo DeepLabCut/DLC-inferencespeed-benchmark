@@ -2,14 +2,34 @@ name: Dog Video
 image_sizes: ["75 x 33", "150 x 267", "300 x 533", "424 x 754", "600 x 1067"]
 benchmarks:
   - os: Linux
-    processor: Intel Xeon CPU
+    processor: Intel Xeon CPU (3.1 GHz) 
     model: MobileNetV2-0.35
     results: [[62,5], [31,1], [14,0], [8,0], [4,0]]
     
   - os: Linux
-    processor: Intel Xeon CPU
-    model: Resnet-50
+    processor: Intel Xeon CPU (3.1 GHz)
+    model: ResNet-50
     results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
+  
+  - os: Linux
+  processor: GeForce GTX 1080
+  model: MobileNetV2-0.35 
+  results: [[256,51], [208,46], [124,19], [80,9], [43,1]]
+  
+ - os: Linux
+  processor: TITAN RTX
+  model: MobileNetV2-0.35 
+  results: [[168,29], [144,20], [133,14], [115,9], [71,3]]
+  
+ - os: Linux
+  processor: TITAN RTX
+  model: ResNet-50 
+  results: [[132,14], [113,11], [82,4], [56,2], [33,1]]
+  
+   - os: Linux
+  processor: GeForce GTX 1080
+  model: ResNet-50 
+  results: [[121,15], [95,13], [52,3], [33,1], [19,10]]
 
   - os: Windows
     processor: Intel Xeon CPU
@@ -18,5 +38,5 @@ benchmarks:
     
   - os: Windows
     processor: Intel Xeon CPU
-    model: Resnet-50
+    model: ResNet-50
     results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
