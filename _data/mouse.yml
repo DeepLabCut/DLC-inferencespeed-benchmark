@@ -12,12 +12,12 @@ benchmarks:
   #  results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
     
   - os: Linux
-    processor: Intel Xeon CPU (3.1 GHz) 
+    processor: Intel Xeon CPU 3.1 GHz 
     model: MobileNetV2-0.35
     results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
     
   - os: Linux
-    processor: Intel Xeon CPU (3.1 GHz)
+    processor: Intel Xeon CPU 3.1 GHz
     model: ResNet-50
     results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
   
@@ -94,12 +94,12 @@ benchmarks:
     results: [[25,0], [16,0], [7,0], [4,0], [2,0]]
    
   - os: Windows
-    processor: Intel Xeon Silver CPU (2.1 GHz)
+    processor: Intel Xeon Silver CPU 2.1 GHz
     model: MobileNetV2-0.35
     results: [[28,1], [14,0], [6,0], [3,0], [1,0]]
     
   - os: Windows
-    processor: Intel Xeon Silver CPU (2.1 GHz)
+    processor: Intel Xeon Silver CPU 2.1 GHz
     model: ResNet-50
     results: [[23,1], [9,0], [3,0], [2,0], [1,0]]
     
@@ -134,32 +134,32 @@ benchmarks:
     results: [[57,2], [41,1], [19,0], [10,0], [6,0]]
     
  - os: MacOS
-    processor: Intel Core i5 CPU (2.4 GHz)
+    processor: Intel Core i5 CPU 2.4 GHz
     model: MobileNetV2-0.35
     results: [[42,5], [22,2], [12,1], [7,1], [4,0]]
     
   - os: MacOS
-    processor: Intel Core i5 CPU (2.4 GHz)
+    processor: Intel Core i5 CPU 2.4 GHz
     model: ResNet-50
     results: [[9,1], [4,0], [2,0], [1,0], [0,0]]
 
   - os: MacOS
-    processor: Intel Core i7 CPU (3.5 GHz)
+    processor: Intel Core i7 CPU 3.5 GHz
     model: MobileNetV2-0.35
     results: [[127,10], [48,3], [16,1], [9,1], [4,0]]
     
   - os: MacOS
-    processor: Intel Core i7 CPU (3.5 GHz)
+    processor: Intel Core i7 CPU 3.5 GHz
     model: ResNet-50
     results: [[30,3], [10,2], [3,0], [2,0], [1,0]]
     
   - os: MacOS
-    processor: Intel Core i9 CPU (2.4 GHz)
+    processor: Intel Core i9 CPU 2.4 GHz
     model: MobileNetV2-0.35
     results: [[178,15], [74,16], [19,3], [10,1], [6,0]]
     
   - os: MacOS
-    processor: Intel Core i9 CPU (2.4 GHz)
+    processor: Intel Core i9 CPU 2.4 GHz
     model: ResNet-50
     results: [[35,8], [14,2], [6,1], [4,0], [2,0]]
 
