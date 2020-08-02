@@ -1,12 +1,185 @@
 name: Mouse Video
 image_sizes: ["115 x 87", "229 x 174", "459 x 349", "649 x 493", "917 x 698"]
 benchmarks:
+  #- os: Linux
+  #  processor: Intel Xeon CPU
+  #  model: MobileNetV2-0.35
+  #  results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
+
+ # - os: Linux
+ #   processor: Intel Xeon CPU
+  #  model: Resnet-50
+  #  results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
+    
   - os: Linux
-    processor: Intel Xeon CPU
+    processor: Intel Xeon CPU (3.1 GHz) 
     model: MobileNetV2-0.35
     results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
+    
+  - os: Linux
+    processor: Intel Xeon CPU (3.1 GHz)
+    model: ResNet-50
+    results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
+  
+  - os: Linux
+    processor: GeForce GTX 1080
+    model: MobileNetV2-0.35 
+    results: [[285,24], [209,23], [134,9], [86,2], [44,1]]
+   
+  - os: Linux
+    processor: GeForce GTX 1080
+    model: ResNet-50 
+    results: [[136,8], [106,3], [60,1], [35,0], [19,10]]
+  
+  - os: Linux
+    processor: TITAN RTX
+    model: MobileNetV2-0.35 
+    results: [[169,28], [145,19], [152,15], [124,9], [78,3]]
 
   - os: Linux
-    processor: Intel Xeon CPU
-    model: Resnet-50
-    results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
+    processor: TITAN RTX
+    model: ResNet-50 
+    results: [[149,16], [119,11], [92,3], [58,2], [35,1]]
+  
+  - os: Linux
+    processor: Tesla V100-SXM2-16GB
+    model: MobileNetV2-0.35 
+    results: [[260,12], [218,9], [180,18], [121,8], [68,3]]
+  
+  - os: Linux
+    processor: Tesla V100-SXM2-16GB
+    model: ResNet-50 
+    results: [[184,6], [151,5], [111,6], [75,3], [47,2]]
+  
+
+  - os: Linux
+    processor: Tesla P100-PCIE-16GB
+    model: MobileNetV2-0.35 
+    results: [[246,12], [198,7], [138,8], [79,3], [46,1]]
+  
+  - os: Linux
+    processor: Tesla P100-PCIE-16GB
+    model: ResNet-50 
+    results: [[128,3], [103,2], [70,3], [46,1], [28,1]]
+  
+  - os: Linux
+    processor: Tesla K80
+    model: MobileNetV2-0.35
+    results: [[127,6], [119,5], [79,4], [52,2], [28,1]]
+  
+  - os: Linux
+    processor: Tesla K80
+    model: ResNet-50
+    results: [[60,2], [45,2], [23,1], [13,0], [7,0]]
+  
+        
+  - os: Linux
+    processor: Tesla T4
+    model: MobileNetV2-0.35
+    results: [[242,21], [197,16], [156,14], [101,6], [56,2]]
+  
+  - os: Linux
+    processor: Tesla T4
+    model: ResNet-50
+    results: [[141,7], [102,5], [57,3], [34,1], [20,0]]
+  
+  - os: Linux
+    processor: Quadro P400
+    model: MobileNetV2-0.35
+    results: [[114,5], [84,3], [37,1], [20,0], [10,0]]
+  
+  - os: Linux
+    processor: Quadro P400
+    model: ResNet-50
+    results: [[25,0], [16,0], [7,0], [4,0], [2,0]]
+   
+  - os: Windows
+    processor: Intel Xeon Silver CPU (2.1 GHz)
+    model: MobileNetV2-0.35
+    results: [[28,1], [14,0], [6,0], [3,0], [1,0]]
+    
+  - os: Windows
+    processor: Intel Xeon Silver CPU (2.1 GHz)
+    model: ResNet-50
+    results: [[23,1], [9,0], [3,0], [2,0], [1,0]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080 with Max-Q Design
+    model: MobileNetV2-0.35
+    results: [[147,17], [136,15], [108,6], [73,3], [46,1]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080 with Max-Q Design
+    model: ResNet-50
+    results: [[107,5], [93,4], [54,2], [32,1], [18,0]]
+
+   - os: Windows
+    processor: GeForce GTX 1080
+    model: MobileNetV2-0.35
+    results: [[133,15], [119,14], [100,9], [77,3], [43,1]]
+    
+  - os: Windows
+    processor: GeForce GTX 1080
+    model: ResNet-50
+    results: [[110,5], [94,3], [55,1], [34,1], [19,0]]
+    
+  - os: Windows
+    processor: Quadro P1000
+    model: MobileNetV2-0.35
+    results: [[129,13], [115,11], [72,3], [43,1], [22,0]]
+    
+  - os: Windows
+    processor: Quadro P1000
+    model: ResNet-50
+    results: [[57,2], [41,1], [19,0], [10,0], [6,0]]
+    
+ - os: MacOS
+    processor: Intel Core i5 CPU (2.4 GHz)
+    model: MobileNetV2-0.35
+    results: [[42,5], [22,2], [12,1], [7,1], [4,0]]
+    
+  - os: MacOS
+    processor: Intel Core i5 CPU (2.4 GHz)
+    model: ResNet-50
+    results: [[9,1], [4,0], [2,0], [1,0], [0,0]]
+
+  - os: MacOS
+    processor: Intel Core i7 CPU (3.5 GHz)
+    model: MobileNetV2-0.35
+    results: [[127,10], [48,3], [16,1], [9,1], [4,0]]
+    
+  - os: MacOS
+    processor: Intel Core i7 CPU (3.5 GHz)
+    model: ResNet-50
+    results: [[30,3], [10,2], [3,0], [2,0], [1,0]]
+    
+  - os: MacOS
+    processor: Intel Core i9 CPU (2.4 GHz)
+    model: MobileNetV2-0.35
+    results: [[178,15], [74,16], [19,3], [10,1], [6,0]]
+    
+  - os: MacOS
+    processor: Intel Core i9 CPU (2.4 GHz)
+    model: ResNet-50
+    results: [[35,8], [14,2], [6,1], [4,0], [2,0]]
+
+  - os: Jetson
+    processor: Xavier
+    model: MobileNetV2-0.35
+    results: [[79,9], [68,9], [59,5], [44,2], [27,1]]
+    
+  - os: Jetson
+    processor: Xavier
+    model: ResNet-50
+    results: [[46,2], [36,1], [19,0], [12,0], [7,0]]
+    
+  - os: Jetson
+    processor: TX2
+    model: MobileNetV2-0.35
+    results: [[39,2], [30,2], [18,1], [9,0], [5,0]]
+    
+  - os: Jetson
+    processor: TX2
+    model: ResNet-50
+    results: [[19,1], [11,0], [6,0], [4,0], [2,0]] 
+   
