@@ -2,12 +2,12 @@ name: Dog Video
 image_sizes: ["75 x 33", "150 x 267", "300 x 533", "424 x 754", "600 x 1067"]
 benchmarks:
   - os: Linux
-    processor: Intel Xeon CPU (3.1 GHz) 
+    processor: Intel Xeon CPU 3.1 GHz
     model: MobileNetV2-0.35
     results: [[62,5], [31,1], [14,0], [8,0], [4,0]]
     
   - os: Linux
-    processor: Intel Xeon CPU (3.1 GHz)
+    processor: Intel Xeon CPU 3.1 GHz
     model: ResNet-50
     results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
   
@@ -82,12 +82,12 @@ benchmarks:
     results: [[24,0], [16,9], [6,0], [4,0], [2,0]]
 
   - os: Windows
-    processor: Intel Xeon Silver CPU (2.1 GHz)
+    processor: Intel Xeon Silver CPU 2.1 GHz
     model: MobileNetV2-0.35
     results: [[28,1], [13,0], [6,0], [3,0], [1,0]]
     
   - os: Windows
-    processor: Intel Xeon Silver CPU (2.1 GHz)
+    processor: Intel Xeon Silver CPU 2.1 GHz
     model: ResNet-50
     results: [[22,1], [9,0], [3,0], [2,0], [1,0]]
     
@@ -122,32 +122,32 @@ benchmarks:
     results: [[54,2], [38,1], [17,0], [10,0], [5,0]]
     
   - os: MacOS
-    processor: Intel Core i5 CPU (2.4 GHz)
+    processor: Intel Core i5 CPU 2.4 GHz
     model: MobileNetV2-0.35
     results: [[39,5], [20,2], [11,1], [7,1], [4,0]]
     
   - os: MacOS
-    processor: Intel Core i5 CPU (2.4 GHz)
+    processor: Intel Core i5 CPU 2.4 GHz
     model: ResNet-50
     results: [[8,1], [4,0], [1,0], [1,0], [0,0]]
     
   - os: MacOS
-    processor: Intel Core i7 CPU (3.5 GHz)
+    processor: Intel Core i7 CPU 3.5 GHz
     model: MobileNetV2-0.35
     results: [[117,8], [47,3], [15,1], [8,0], [4,0]]
     
   - os: MacOS
-    processor: Intel Core i7 CPU (3.5 GHz)
+    processor: Intel Core i7 CPU 3.5 GHz
     model: ResNet-50
     results: [[29,2], [11,1], [3,0], [2,0], [1,0]]
     
   - os: MacOS
-    processor: Intel Core i9 CPU (2.4 GHz)
+    processor: Intel Core i9 CPU 2.4 GHz
     model: MobileNetV2-0.35
     results: [[126,25], [66,13], [19,3], [11,1], [6,0]]
     
   - os: MacOS
-    processor: Intel Core i9 CPU (2.4 GHz)
+    processor: Intel Core i9 CPU 2.4 GHz
     model: ResNet-50
     results: [[31,6], [16,2], [6,1], [4,0], [2,0]]
     
