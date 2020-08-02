@@ -1,10 +1,10 @@
 name: Mouse Video
 image_sizes: ["115 x 87", "229 x 174", "459 x 349", "649 x 493", "917 x 698"]
 benchmarks:
- # - os: Linux
- #   processor: Intel Xeon CPU
+  #- os: Linux
+  #  processor: Intel Xeon CPU
   #  model: MobileNetV2-0.35
- #   results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
+  #  results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
 
  # - os: Linux
  #   processor: Intel Xeon CPU
@@ -52,45 +52,44 @@ benchmarks:
     results: [[184,6], [151,5], [111,6], [75,3], [47,2]]
   
 
- - os: Linux
-   processor: Tesla P100-PCIE-16GB
-   model: MobileNetV2-0.35 
-   results: [[246,12], [198,7], [138,8], [79,3], [46,1]]
+  - os: Linux
+    processor: Tesla P100-PCIE-16GB
+    model: MobileNetV2-0.35 
+    results: [[246,12], [198,7], [138,8], [79,3], [46,1]]
   
- - os: Linux
-   processor: Tesla P100-PCIE-16GB
-   model: ResNet-50 
-   results: [[128,3], [103,2], [70,3], [46,1], [28,1]]
+  - os: Linux
+    processor: Tesla P100-PCIE-16GB
+    model: ResNet-50 
+    results: [[128,3], [103,2], [70,3], [46,1], [28,1]]
   
- - os: Linux
-   processor: Tesla K80
-   model: MobileNetV2-0.35
-   results: [[127,6], [119,5], [79,4], [52,2], [28,1]]
+  - os: Linux
+    processor: Tesla K80
+    model: MobileNetV2-0.35
+    results: [[127,6], [119,5], [79,4], [52,2], [28,1]]
   
- - os: Linux
-   processor: Tesla K80
-   model: ResNet-50
-   results: [[60,2], [45,2], [23,1], [13,0], [7,0]]
+  - os: Linux
+    processor: Tesla K80
+    model: ResNet-50
+    results: [[60,2], [45,2], [23,1], [13,0], [7,0]]
   
         
- - os: Linux
-   processor: Tesla T4
-   model: MobileNetV2-0.35
-   results: [[242,21], [197,16], [156,14], [101,6], [56,2]]
+  - os: Linux
+    processor: Tesla T4
+    model: MobileNetV2-0.35
+    results: [[242,21], [197,16], [156,14], [101,6], [56,2]]
   
- - os: Linux
-   processor: Tesla T4
-   model: ResNet-50
-   results: [[141,7], [102,5], [57,3], [34,1], [20,0]]
+  - os: Linux
+    processor: Tesla T4
+    model: ResNet-50
+    results: [[141,7], [102,5], [57,3], [34,1], [20,0]]
   
- - os: Linux
-   processor: Quadro P400
-   model: MobileNetV2-0.35
-   results: [[114,5], [84,3], [37,1], [20,0], [10,0]]
+  - os: Linux
+    processor: Quadro P400
+    model: MobileNetV2-0.35
+    results: [[114,5], [84,3], [37,1], [20,0], [10,0]]
   
-- os: Linux
-   processor: Quadro P400
-   model: ResNet-50
-   results: [[25,0], [16,0], [7,0], [4,0], [2,0]]
+  - os: Linux
+    processor: Quadro P400
+    model: ResNet-50
+    results: [[25,0], [16,0], [7,0], [4,0], [2,0]]
   
-         
