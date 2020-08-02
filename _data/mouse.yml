@@ -133,7 +133,7 @@ benchmarks:
     model: ResNet-50
     results: [[57,2], [41,1], [19,0], [10,0], [6,0]]
     
- - os: MacOS
+  - os: MacOS
     processor: Intel Core i5 CPU 2.4 GHz
     model: MobileNetV2-0.35
     results: [[42,5], [22,2], [12,1], [7,1], [4,0]]
