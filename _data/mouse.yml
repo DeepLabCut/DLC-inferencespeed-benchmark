@@ -1,16 +1,6 @@
 name: Mouse Video
 image_sizes: ["115 x 87", "229 x 174", "459 x 349", "649 x 493", "917 x 698"]
 benchmarks:
-  #- os: Linux
-  #  processor: Intel Xeon CPU
-  #  model: MobileNetV2-0.35
-  #  results: [[61,4], [32,1], [15,0], [8,0], [4,0]]
-
- # - os: Linux
- #   processor: Intel Xeon CPU
-  #  model: Resnet-50
-  #  results: [[28,1], [11,0], [4,0], [2,0], [1,0]]
-    
   - os: Linux
     processor: Intel Xeon CPU 3.1 GHz
     model: MobileNetV2-0.35
@@ -72,7 +62,6 @@ benchmarks:
     model: ResNet-50
     results: [[60,2], [45,2], [23,1], [13,0], [7,0]]
   
-        
   - os: Linux
     processor: Tesla T4
     model: MobileNetV2-0.35
@@ -113,7 +102,7 @@ benchmarks:
     model: ResNet-50
     results: [[107,5], [93,4], [54,2], [32,1], [18,0]]
 
-   - os: Windows
+  - os: Windows
     processor: GeForce GTX 1080
     model: MobileNetV2-0.35
     results: [[133,15], [119,14], [100,9], [77,3], [43,1]]
@@ -182,4 +171,3 @@ benchmarks:
     processor: TX2
     model: ResNet-50
     results: [[19,1], [11,0], [6,0], [4,0], [2,0]] 
-   
