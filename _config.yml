@@ -1,5 +1,5 @@
 title: DLC Inference Speed Benchmark
-description: A database of inference speed benchmark results on various video sizes, platforms and architectures
+description: A database of inference speed benchmark results (reported as frames per sec) on various video sizes, platforms and architectures
 theme: minima
 
 github_username: deeplabcut
