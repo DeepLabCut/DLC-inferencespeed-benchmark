@@ -1,4 +1,4 @@
-# DLC Inference Speed bBenchmark
+# DLC Inference Speed Benchmark
 
 This repository stores the benchmark results for [DeepLabCut-live](https://github.com/DeepLabCut/DeepLabCut-live) for each standard dataset, grouped by operating system, processor, and DLC model. Each configuration is tested on a fixed set of videos.
 
