@@ -6,13 +6,19 @@ This repository stores the benchmark results for [DeepLabCut-live](https://githu
 
 1. Install the [DeepLabCut-live!](https://github.com/DeepLabCut/DeepLabCut-live) SDK
 2. git clone the repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git`
-2. Run our benchmarking script on your system (with our data/model):
-
-```python
-TBA
+2. Run our benchmarking script on your system (with our data/model). Within the DeepLabCut-Live directory you will find the following structure:
 ```
+DeepLabCut-Live
+   -Benchmarking
+   --> run_dlclive_benchmark.py
+```
+Then you can run (with python3, pythonw on MacOS):
+```python
+python run_dlclive_benchmark.py
+```
+This will take some time!
 
-3. Please make a pull request (i.e., add your file to your forked repo and create a new pull request) or email us: admin@deeplabcut.org if you have any trouble!
+3. Please make a pull request (i.e., add the resulting file to your forked repo under the `_data` folder, and create a new pull request!) or email us: admin@deeplabcut.org if you have any trouble!
 
 ## Benchmark YAML file
 
