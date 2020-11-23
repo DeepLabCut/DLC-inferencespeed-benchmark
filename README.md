@@ -1,4 +1,4 @@
-# DLC Inference Speed Benchmark
+# DLC Inference Speed Benchmark <img src="https://images.squarespace-cdn.com/content/v1/57f6d51c9f74566f55ecf271/1606082050387-M8M1CFI5DFUZCBAAUI0W/ke17ZwdGBToddI8pDm48kLuMKy7Ws6mFofiFehYynfdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzp2tFVMcEgqZM8QO7VXXQogrsLnYKC4n4YnYuHC1HMRWygQlqMNAoTF9HaycikLeg/DLClive.png?format=750w" width="350" title="DLC-live" alt="DLC LIVE!" align="right" vspace = "50">
 
 This repository stores the benchmark results for [DeepLabCut-live](https://github.com/DeepLabCut/DeepLabCut-live) for each standard dataset, grouped by operating system, processor, and DLC model. Each configuration is tested on a fixed set of videos.
 
@@ -16,7 +16,7 @@ Then you can run (with python3, pythonw on MacOS):
 ```python
 python run_dlclive_benchmark.py
 ```
-This will take some time!
+This will take some time, depending on your internet connection-- the videos are large to get stable values during benchmarking.
 
 3. Please make a pull request (i.e., add the resulting file to your forked repo under the `_data` folder, and create a new pull request!) or email us: admin@deeplabcut.org if you have any trouble!
 
