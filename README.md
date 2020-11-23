@@ -1,6 +1,24 @@
-# DLC-inferencespeed-benchmark
+# DLC Inference Speed Benchmark <img src="https://images.squarespace-cdn.com/content/v1/57f6d51c9f74566f55ecf271/1606082050387-M8M1CFI5DFUZCBAAUI0W/ke17ZwdGBToddI8pDm48kLuMKy7Ws6mFofiFehYynfdZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzp2tFVMcEgqZM8QO7VXXQogrsLnYKC4n4YnYuHC1HMRWygQlqMNAoTF9HaycikLeg/DLClive.png?format=750w" width="350" title="DLC-live" alt="DLC LIVE!" align="right" vspace = "50">
 
-This repository stores the benchmark results for [DeepLabCut-live](https://github.com/DeepLabCut/DeepLabCut-live) for each standard dataset, grouped by operating system, processor, and DLC model. Each configuration is tested on a fixed set of image sizes.
+This repository stores the benchmark results for [DeepLabCut-live](https://github.com/DeepLabCut/DeepLabCut-live) for each standard dataset, grouped by operating system, processor, and DLC model. Each configuration is tested on a fixed set of videos.
+
+## How to contribute!
+
+1. Install the [DeepLabCut-live!](https://github.com/DeepLabCut/DeepLabCut-live) SDK
+2. git clone the repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git` and run `./reinstall.sh` to be sure it's properly installed.
+2. Run our benchmarking script on your system (with our data/model). Within the DeepLabCut-Live directory you will find the following structure:
+```
+DeepLabCut-Live
+   -Benchmarking
+   --> run_dlclive_benchmark.py
+```
+Then you can run (with python3, pythonw on MacOS):
+```python
+python run_dlclive_benchmark.py
+```
+This will take some time, depending on your internet connection-- the videos are large to get stable values during benchmarking.
+
+3. Please make a pull request (i.e., add the resulting file to your forked repo under the `_data` folder, and create a new pull request!) or email us: admin@deeplabcut.org if you have any trouble!
 
 ## Benchmark YAML file
 
@@ -28,19 +46,3 @@ The block collection `benchmarks` contains the structured list of individual tab
 The `results` entry for each benchmark is a list of `[mean,std]`, in frames per second, containing the results of running the benchmark for each of the image sizes declared at the top of the file. For the table to format correctly, all lists need to have the same number of results.
 
 YAML files can be quite picky with indenting, so when editing the file manually be careful with lining up the dashes. If any error messages show up, beware that the line indicated in the error message might not correspond to the actual where the problem is.
-
-## How to contribute
-
-1. Install the [DeepLabCut-live](https://github.com/DeepLabCut/DeepLabCut-live) SDK
-2. Follow the [benchmarking instructions](https://github.com/DeepLabCut/DeepLabCut-live#benchmarkinganalyzing-exported-deeplabcut-models) for exported DLC models
-3. Calculate the `mean` and `std` in frames per second for each of your benchmarks
-4. Fork the repository
-5. If testing a new configuration on the standard datasets, find the matching dataset in the `_data` folder (e.g. `dog.yml` or `mouse.yml`); otherwise, create a new YML file for your dataset
-6. Add an entry for your new benchmark:
-```yml
-  - os: Linux
-    processor: Intel Xeon CPU 3.1 GHz
-    model: ResNet-50
-    results: [[24,1], [11,0], [3,0], [2,0], [1,0]]
-```
-7. Submit a pull-request
