@@ -4,21 +4,24 @@ This repository stores the benchmark results for [DeepLabCut-live](https://githu
 
 ## How to contribute!
 
-1. Install the [DeepLabCut-live!](https://github.com/DeepLabCut/DeepLabCut-live) SDK
-2. git clone the repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git` and run `./reinstall.sh` to be sure it's properly installed.
+1. Install the [DeepLabCut-live! SDK](https://github.com/DeepLabCut/DeepLabCut-live)
+2. git clone the DeepLabCut-live! repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git` and run `./reinstall.sh` to be sure it's properly installed.
 2. Run our benchmarking script on your system (with our data/model). Within the DeepLabCut-Live directory you will find the following structure:
 ```
 DeepLabCut-Live
    -Benchmarking
    --> run_dlclive_benchmark.py
 ```
+
 Then you can run (with python3, pythonw on MacOS):
+
 ```python
 python run_dlclive_benchmark.py
 ```
-This will take some time, depending on your internet connection-- the videos are large to get stable values during benchmarking.
 
-3. Please make a pull request (i.e., add the resulting file to your forked repo under the `_data` folder, and create a new pull request!) or email us: admin@deeplabcut.org if you have any trouble!
+This will take some time, depending on your internet connection and hardware. Note that downloading, might take a few minutes, as the multiple models & videos comprise about 2,2 GB. Then 4 models will be run on two videos for various video sizes. To get you a sense,  this takes about 90 minutes on a Titan RTX. IF you want to run the benchmark on a CPU or slow hardware, you can also change the number of frames, to 1000 in https://github.com/DeepLabCut/DeepLabCut-live/blob/master/benchmarking/run_dlclive_benchmark.py#L24.
+
+3. Please make a pull request here (i.e., add the resulting file to your forked repo under the `_data` folder, and create a new pull request!) or email us: admin@deeplabcut.org if you have any trouble!
 
 ## Benchmark YAML file
 
@@ -32,7 +35,7 @@ benchmarks:
     processor: Intel Xeon CPU 3.1 GHz
     model: MobileNetV2-0.35
     results: [[62,5], [31,1], [14,0], [8,0], [4,0]]
-    
+
   - os: Linux
     processor: Intel Xeon CPU 3.1 GHz
     model: ResNet-50
