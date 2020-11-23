@@ -5,7 +5,7 @@ This repository stores the benchmark results for [DeepLabCut-live](https://githu
 ## How to contribute!
 
 1. Install the [DeepLabCut-live!](https://github.com/DeepLabCut/DeepLabCut-live) SDK
-2. git clone the repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git`
+2. git clone the repo: `git clone git@github.com:DeepLabCut/DLC-inferencespeed-benchmark.git` and run `./reinstall.sh` to be sure it's properly installed.
 2. Run our benchmarking script on your system (with our data/model). Within the DeepLabCut-Live directory you will find the following structure:
 ```
 DeepLabCut-Live
