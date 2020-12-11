@@ -22,6 +22,16 @@ benchmarks:
     results: [[136,8], [106,3], [60,1], [35,0], [19,10]]
   
   - os: Linux
+    processor: GeForce GTX 2080 Ti
+    model: MobileNetV2-0.35 
+    results: [[252,49], [198,36], [198, 16], [147,8], [80,3]]
+   
+  - os: Linux
+    processor: GeForce GTX 2080 Ti
+    model: ResNet-50 
+    results: [[192,21], [151,17], [101,4], [63,2], [37,1]]
+  
+  - os: Linux
     processor: TITAN RTX
     model: MobileNetV2-0.35 
     results: [[169,28], [145,19], [152,15], [124,9], [78,3]]
